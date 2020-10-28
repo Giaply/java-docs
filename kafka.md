@@ -63,7 +63,7 @@ Message được lưu trữ đến khi hết thời gian trong cấu hình, cons
 
  - C1 đọc P1, C2 đọc P2, C3 đọc P3: đúng
 
- - C1 đọc P1, C2 đọc P2, C3 C4 đọc P3: sai => 2 consumer trong 1 group không đọc cùng 1 partition
+ - C1 đọc P1, C2 đọc P2, C3 C4 đọc P3: sai khi 2 consumer trong 1 group không đọc cùng 1 partition, đúng khi 1 trong 2 consumer (VD: C3 bị shutdown hoặc crash thì C4 sẽ thay thế)
 
  - C1 đọc P1, C2 đọc P2, C3 đọc P3, C4 không đọc gì: đúng
  #### 9. Cho 2 consumer C1, C2 và message M1. C1 vừa đọc M1, C2 có thể đọc M1 tiếp không, với điều kiện như thế nào?
@@ -73,3 +73,4 @@ Message được lưu trữ đến khi hết thời gian trong cấu hình, cons
 
  #### 10. 1 message được ghi vào Kafka có thể sửa được không và sửa bởi ai như thế nào
  Không thể sửa 
+ ( Có thể coi việc xóa topic, hay cấu hình thời gian lưu trữ để loại bỏ message chứ k sửa đc)
