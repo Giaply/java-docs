@@ -24,16 +24,7 @@
  => sai 
  
  *NOTE:  Kafka  còn là một hệ thống có đặc tính "duribility" dữ liệu có thể được lưu trữ an toàn cho đến khi có consumer sẵn sàng nhận nó. 
-5. Zookeepers có tác dụng lưu trữ gì với Kafka:
--  Record headers
-
--  Consumer logic
-
- - Access Control Lists
-
- - Broker SSL certificate: .
-
- - Cluster metadata: 
+5. Zookeepers có tác dụng lưu trữ gì với Kafka: được dùng để quản lý và bố trí các broker.
  
  6. Kafka convert object sang định dạng gì để truyền dữ liệu / quá trình convert này gọi là:
  - String / Encryption: đúng
@@ -43,4 +34,4 @@
  - String / Externalization
 
  - Byte / Canonicalization
-  7. essage kafka được chia vào các topic dựa trên: key
+  7. message kafka được chia vào các topic dựa trên: key
