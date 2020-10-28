@@ -70,5 +70,6 @@ Message được lưu trữ đến khi hết thời gian trong cấu hình, cons
  - có thể: 
  + consumer nằm trong 2 group khác nhau
  + 1 consumer bị shutdown hoặc crash
+
  #### 10. 1 message được ghi vào Kafka có thể sửa được không và sửa bởi ai như thế nào
- 
+ Không thể sửa 
